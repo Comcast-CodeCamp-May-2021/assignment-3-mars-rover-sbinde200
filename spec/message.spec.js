@@ -14,6 +14,7 @@ describe("Message class", function() {
     let message = new Message('New message!');
     expect(message.name).toEqual('New message!');
   });
+  // The test confirms that the constructor in the Message class correctly sets the name property in a new message object.
 
   it("contains a commands array passed into the constructor as 2nd argument", function() {
     let commands = [new Command('STATUS_CHECK'), new Command('MOVE', 20)];
@@ -21,4 +22,6 @@ describe("Message class", function() {
     expect(message.commands).toEqual(commands);
   });
 
-});
+ });
+
+// ALL TESTS PASS HERE
